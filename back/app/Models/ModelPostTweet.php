@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class ModelPostTweet extends Model
+{
+    use HasFactory;
+
+    protected $table = 'post';
+
+    public $timestamps = false;
+
+    protected $fillable = [
+        'body',
+        'user_id',
+        'post_id',
+        'created_at'
+    ];
+}
